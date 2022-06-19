@@ -8,7 +8,7 @@ struct NetworkResponse<Wrapped: Decodable>: Decodable {
 
 extension URLSession {
     @available(macOS 10.15, *)
-    func publisher <T: Decodable>(
+    func customPublisher <T: Decodable>(
         for url: URL,
         responseType: T.Type = T.self,
         decoder: JSONDecoder = .init()
