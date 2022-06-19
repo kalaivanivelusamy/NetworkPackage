@@ -3,6 +3,7 @@ import Combine
 
 struct NetworkResponse<Wrapped: Decodable>: Decodable {
     var result: Wrapped
+    var test: Bool = false
 }
 
 extension URLSession {
